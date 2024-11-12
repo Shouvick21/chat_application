@@ -39,7 +39,7 @@ app.use("/api/v1/ai", Isauthenticated, gptRoute);
 
 crons.schedule("* * * * *",async()=>{
   try {
-    let {data}=await axios.get("https://chat-application-e4w7.onrender.com")
+    let {data}=await axios.get("https://chat-application-p7ci.onrender.com")
   console.log(data)
   } catch (error) {
     console.log(error.message)
